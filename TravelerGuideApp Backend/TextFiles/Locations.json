@@ -1,0 +1,110 @@
+[
+  {
+    "cityId": 1,
+    "name": "Muzeu2-Madrid",
+    "address": "AdresaMuzeu2Madrid",
+    "locationType": "Museum",
+    "price": 12,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 1,
+    "name": "Park1-Madrid",
+    "address": "AdresaPark1Madrid",
+    "locationType": "Park",
+    "price": 0,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 2,
+    "name": "Muzeu1-Paris",
+    "address": "Adresa1Madrid",
+    "locationType": "Museum",
+    "price": 19.99,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 2,
+    "name": "CasaMemoriala1-Paris",
+    "address": "AdresaCasaMemoriala1Paris",
+    "locationType": "Memorial House",
+    "price": 10,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 2,
+    "name": "Park1-Paris",
+    "address": "AdresaPark1Paris",
+    "locationType": "Park",
+    "price": 0,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 3,
+    "name": "Park1-London",
+    "address": "AdresaPark1Londra",
+    "locationType": "Park",
+    "price": 0,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 3,
+    "name": "Muzeu1-London",
+    "address": "AdresaMuzeu1Londra",
+    "locationType": "Museum",
+    "price": 18,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 4,
+    "name": "Casa1Memoriala1-Bucuresti",
+    "address": "AdresaCasaMemoriala1Bucuresti",
+    "locationType": "Memorial House",
+    "price": 5,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 4,
+    "name": "Muzeu1-Bucuresti",
+    "address": "AdresaMuzeu1Bucuresti",
+    "locationType": "Museum",
+    "price": 20,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 5,
+    "name": "Muzeu1-New York",
+    "address": "AdresaMuzeu1NewYork",
+    "locationType": "Museum",
+    "price": 22,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 5,
+    "name": "CentralPark-New York",
+    "address": "AddressCentralParkNewYork",
+    "locationType": "Park",
+    "price": 0,
+    "latitude": "1",
+    "longitude": "1"
+  },
+  {
+    "cityId": 6,
+    "name": "FamousBuilding1-Berlin",
+    "address": "AddressFamousBuilding1Berlin",
+    "locationType": "Famous Building",
+    "price": 12,
+    "latitude": "1",
+    "longitude": "1"
+  }
+]
