@@ -1,0 +1,31 @@
+[
+   {
+	"travelItineraryId":1,
+	"locationId":1
+   },
+   {
+	"travelItineraryId":1,
+	"locationId":2
+   },
+   {
+	"travelItineraryId":2,
+	"locationId":4
+   },
+   {
+	"travelItineraryId":2,
+	"locationId":5
+   },
+   {
+	"travelItineraryId":2,
+	"locationId":6
+   },
+   {
+	"travelItineraryId":3,
+	"locationId":2
+   },
+   {
+	"travelItineraryId":3,
+	"locationId":3
+   }
+
+]
