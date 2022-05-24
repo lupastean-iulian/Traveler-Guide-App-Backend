@@ -3,7 +3,7 @@
   &lt;Assembly Path="C:\Users\ilupa\.nuget\packages\mediatr.contracts\1.0.1\lib\netstandard2.0\MediatR.Contracts.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\ilupa\.nuget\packages\mediatr\10.0.1\lib\netstandard2.1\MediatR.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=51a6ea86_002D763a_002D4301_002Da08c_002Dad5c40d95043/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Get_TravelItinerary_By_Id_ShouldReturnOkStatusCode" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=51a6ea86_002D763a_002D4301_002Da08c_002Dad5c40d95043/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Get_TravelItinerary_By_Id_ShouldReturnOkStatusCode" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_TravelItinerary_By_Id_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_All_Travel_Itineraries_For_User_ShouldReturnExistingTravelItinerary&lt;/TestId&gt;&#xD;
@@ -18,7 +18,7 @@
     &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9dd66d74_002D0391_002D4a8b_002Da5b7_002D297460252a12/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Create_City_ShouldReturnOKStatusCode" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9dd66d74_002D0391_002D4a8b_002Da5b7_002D297460252a12/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Create_City_ShouldReturnOKStatusCode" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Create_City_ShouldReturnOKStatusCode&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Get_All_Cities_ShouldReturnOKResponse&lt;/TestId&gt;&#xD;
