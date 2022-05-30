@@ -1,0 +1,57 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\ilupa\.nuget\packages\mediatr.contracts\1.0.1\lib\netstandard2.0\MediatR.Contracts.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\ilupa\.nuget\packages\mediatr\10.0.1\lib\netstandard2.1\MediatR.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=51a6ea86_002D763a_002D4301_002Da08c_002Dad5c40d95043/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Get_TravelItinerary_By_Id_ShouldReturnOkStatusCode" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_TravelItinerary_By_Id_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_All_Travel_Itineraries_For_User_ShouldReturnExistingTravelItinerary&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Update_Location_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=92ecd9d0_002D5b43_002D4dd6_002D83bb_002D8e0f898d8ed0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CityFixture" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::66F1B500-A49B-4DBA-B64B-D3FC34E117D8::net6.0::TravelerGuideApp.UnitTests.CityControllerFixture&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::66F1B500-A49B-4DBA-B64B-D3FC34E117D8::net6.0::TravelerGuideApp.UnitTests.LocationControllerFixture&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::66F1B500-A49B-4DBA-B64B-D3FC34E117D8::net6.0::TravelerGuideApp.UnitTests.UserControllerFixture&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9dd66d74_002D0391_002D4a8b_002Da5b7_002D297460252a12/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Create_City_ShouldReturnOKStatusCode" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Create_City_ShouldReturnOKStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Get_All_Cities_ShouldReturnOKResponse&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Get_All_Cities_ShouldReturnExistingCity&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Delete_City_ShouldDeleteAllLocationsFromCity&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Update_City_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Update_City_ShouldReturnNotFoundStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Get_All_Locations_ShouldReturnOkResponse&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Create_Location_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Update_Location_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Delete_Location_ShouldReturnNoContent&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Delete_Location_ShouldDeleteTravelItineraryLocations&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Get_City_By_Id_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Get_City_By_Id_ShouldreturnNotFoundStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Update_City_ShouldreturnNotFoundStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Delete_City_ShouldReturnNoContent&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Delete_Location_ShouldDeleteTravelItineraryLocationsOnThatCity&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests.Get_City_By_Id_ShouldReturnNotFoundStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.CityControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Get_All_Locations_ShouldReturnExistingLocation&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Get_Location_By_Id_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Get_Location_By_Id_ShouldReturnNotFoundStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.LocationsControllerTests.Update_Location_ShouldReturnNotFoundStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.UsersControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_All_Travel_Itineraries_For_User_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_All_Travel_Itineraries_For_User_ShouldReturnNotFoundStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_All_Travel_Itineraries_For_User_ShouldReturnExstingTravelItinerary&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_All_Travel_Itineraries_For_User_ShouldReturnExistingTravelItinerary&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_TravelItinerary_By_Id_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Get_TravelItinerary_By_Id_ShouldReturnNotFoundStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Create_TravelItinerary_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Update_TravelItinerary_ShouldReturnOkStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Update_TravelItinerary_ShouldReturnNotFoundStatusCode&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::EE05411B-6A48-41DA-B0E5-065CB382F554::net6.0::TravelerGuideApp.IntegrationTests.TravelItinerariesControllerTests.Delete_TravelItinerary_ShouldReturnNoContent&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,72 @@
+[
+  {
+    "firstName": "Ion",
+    "lastName": "Popescu",
+    "email": "ion.popescu@yahoo.com",
+    "password": "password1",
+    "userType": "Visitor"
+  },
+  {
+    "firstName": "Iulian",
+    "lastName": "Lupastean",
+    "email": "ilupastean@yahoo.com",
+    "password": "password2",
+    "userType": "Administrator"
+  },
+  {
+    "firstName": "George",
+    "lastName": "Enescu",
+    "email": "george.enescu@yahoo.com",
+    "password": "password3",
+    "userType": "Visitor"
+  },
+  {
+    "firstName": "Maria",
+    "lastName": "Maiorescu",
+    "email": "maria.maiorescu@yahoo.com",
+    "password": "password4",
+    "userType": "Visitor"
+  },
+  {
+    "firstName": "Gina",
+    "lastName": "Popescu",
+    "email": "gina.popescu@yahoo.com",
+    "password": "password5",
+    "userType": "Visitor",
+  },
+  {
+    "firstName": "Alexandra",
+    "lastName": "Popa",
+    "email": "alexandra.popa@gmail.com",
+    "password": "password6",
+    "userType": "Visitor"
+  },
+  {
+    "firstName": "Ion",
+    "lastName": "Popescu",
+    "email": "ion.popescu@yahoo.com",
+    "password": "password7",
+    "userType": "Visitor"
+  },
+  {
+    "firstName": "Ioan",
+    "lastName": "Nascu",
+    "email": "ioan.nascu@yahoo.com",
+    "password": "password8",
+    "userType": "Visitor"
+  },
+  {
+    "firstName": "Elena",
+    "lastName": "Averescu",
+    "email": "elena.averescu@yahoo.com",
+    "password": "password9",
+    "userType": "Visitor"
+  },
+  {
+    "firstName": "Ion",
+    "lastName": "Pop",
+    "email": "ion.pop@yahoo.com",
+    "password": "password10",
+    "userType": "Visitor"
+  }
+]

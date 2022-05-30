@@ -1,0 +1,336 @@
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 6.0.4 initialized 'TravelerGuideAppDBContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.4' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "Cities" (
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Cities" PRIMARY KEY AUTOINCREMENT,
+          "Name" TEXT NOT NULL,
+          "Country" TEXT NOT NULL
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "Users" (
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+          "FirstName" TEXT NOT NULL,
+          "LastName" TEXT NOT NULL,
+          "Email" TEXT NOT NULL,
+          "Password" TEXT NOT NULL,
+          "UserType" TEXT NOT NULL
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "Locations" (
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_Locations" PRIMARY KEY AUTOINCREMENT,
+          "Name" TEXT NOT NULL,
+          "Address" TEXT NOT NULL,
+          "LocationType" TEXT NOT NULL,
+          "Price" REAL NOT NULL,
+          "Latitude" TEXT NULL,
+          "Longitude" TEXT NULL,
+          "CityId" INTEGER NULL,
+          CONSTRAINT "FK_Locations_Cities_CityId" FOREIGN KEY ("CityId") REFERENCES "Cities" ("Id") ON DELETE CASCADE
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "TravelItineraries" (
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_TravelItineraries" PRIMARY KEY AUTOINCREMENT,
+          "Name" TEXT NOT NULL,
+          "Status" TEXT NOT NULL,
+          "TravelDate" TEXT NOT NULL,
+          "UserId" INTEGER NOT NULL,
+          CONSTRAINT "FK_TravelItineraries_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "TravelItineraryLocations" (
+          "TravelItineraryId" INTEGER NOT NULL,
+          "LocationId" INTEGER NOT NULL,
+          CONSTRAINT "PK_TravelItineraryLocations" PRIMARY KEY ("TravelItineraryId", "LocationId"),
+          CONSTRAINT "FK_TravelItineraryLocations_Locations_LocationId" FOREIGN KEY ("LocationId") REFERENCES "Locations" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_TravelItineraryLocations_TravelItineraries_TravelItineraryId" FOREIGN KEY ("TravelItineraryId") REFERENCES "TravelItineraries" ("Id") ON DELETE CASCADE
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_Locations_CityId" ON "Locations" ("CityId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_TravelItineraries_UserId" ON "TravelItineraries" ("UserId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_TravelItineraryLocations_LocationId" ON "TravelItineraryLocations" ("LocationId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 5), @p1='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Cities" ("Country", "Name")
+      VALUES (@p0, @p1);
+      SELECT "Id"
+      FROM "Cities"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 6), @p1='?' (Size = 5)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Cities" ("Country", "Name")
+      VALUES (@p0, @p1);
+      SELECT "Id"
+      FROM "Cities"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 14), @p1='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Cities" ("Country", "Name")
+      VALUES (@p0, @p1);
+      SELECT "Id"
+      FROM "Cities"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Cities" ("Country", "Name")
+      VALUES (@p0, @p1);
+      SELECT "Id"
+      FROM "Cities"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 3), @p1='?' (Size = 8)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Cities" ("Country", "Name")
+      VALUES (@p0, @p1);
+      SELECT "Id"
+      FROM "Cities"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Cities" ("Country", "Name")
+      VALUES (@p0, @p1);
+      SELECT "Id"
+      FROM "Cities"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 3), @p1='?' (Size = 11)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Cities" ("Country", "Name")
+      VALUES (@p0, @p1);
+      SELECT "Id"
+      FROM "Cities"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 14), @p1='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Cities" ("Country", "Name")
+      VALUES (@p0, @p1);
+      SELECT "Id"
+      FROM "Cities"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 18), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 6), @p4='?' (Size = 1), @p5='?' (Size = 13), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 17), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 4), @p4='?' (Size = 1), @p5='?' (Size = 12), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 13), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 6), @p4='?' (Size = 1), @p5='?' (Size = 12), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 25), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 14), @p4='?' (Size = 1), @p5='?' (Size = 20), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 16), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 4), @p4='?' (Size = 1), @p5='?' (Size = 11), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 17), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 4), @p4='?' (Size = 1), @p5='?' (Size = 12), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 18), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 6), @p4='?' (Size = 1), @p5='?' (Size = 13), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 29), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 14), @p4='?' (Size = 1), @p5='?' (Size = 25), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 21), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 6), @p4='?' (Size = 1), @p5='?' (Size = 16), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 19), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 6), @p4='?' (Size = 1), @p5='?' (Size = 15), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 25), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 4), @p4='?' (Size = 1), @p5='?' (Size = 20), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 28), @p1='?' (DbType = Int32), @p2='?' (Size = 1), @p3='?' (Size = 15), @p4='?' (Size = 1), @p5='?' (Size = 22), @p6='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Locations" ("Address", "CityId", "Latitude", "LocationType", "Longitude", "Name", "Price")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+      SELECT "Id"
+      FROM "Locations"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 3), @p2='?' (Size = 7), @p3='?' (Size = 9), @p4='?' (Size = 7)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 20), @p1='?' (Size = 6), @p2='?' (Size = 9), @p3='?' (Size = 9), @p4='?' (Size = 13)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 23), @p1='?' (Size = 6), @p2='?' (Size = 6), @p3='?' (Size = 9), @p4='?' (Size = 7)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 25), @p1='?' (Size = 5), @p2='?' (Size = 9), @p3='?' (Size = 9), @p4='?' (Size = 7)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 22), @p1='?' (Size = 4), @p2='?' (Size = 7), @p3='?' (Size = 9), @p4='?' (Size = 7)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 24), @p1='?' (Size = 9), @p2='?' (Size = 4), @p3='?' (Size = 9), @p4='?' (Size = 7)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 21), @p1='?' (Size = 3), @p2='?' (Size = 7), @p3='?' (Size = 9), @p4='?' (Size = 7)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 20), @p1='?' (Size = 4), @p2='?' (Size = 5), @p3='?' (Size = 9), @p4='?' (Size = 7)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 24), @p1='?' (Size = 5), @p2='?' (Size = 8), @p3='?' (Size = 9), @p4='?' (Size = 7)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 17), @p1='?' (Size = 3), @p2='?' (Size = 3), @p3='?' (Size = 10), @p4='?' (Size = 7)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "UserType")
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT "Id"
+      FROM "Users"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 14), @p1='?' (Size = 9), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraries" ("Name", "Status", "TravelDate", "UserId")
+      VALUES (@p0, @p1, @p2, @p3);
+      SELECT "Id"
+      FROM "TravelItineraries"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 13), @p1='?' (Size = 7), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraries" ("Name", "Status", "TravelDate", "UserId")
+      VALUES (@p0, @p1, @p2, @p3);
+      SELECT "Id"
+      FROM "TravelItineraries"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 14), @p1='?' (Size = 8), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraries" ("Name", "Status", "TravelDate", "UserId")
+      VALUES (@p0, @p1, @p2, @p3);
+      SELECT "Id"
+      FROM "TravelItineraries"
+      WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraryLocations" ("LocationId", "TravelItineraryId")
+      VALUES (@p0, @p1);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraryLocations" ("LocationId", "TravelItineraryId")
+      VALUES (@p0, @p1);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraryLocations" ("LocationId", "TravelItineraryId")
+      VALUES (@p0, @p1);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraryLocations" ("LocationId", "TravelItineraryId")
+      VALUES (@p0, @p1);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraryLocations" ("LocationId", "TravelItineraryId")
+      VALUES (@p0, @p1);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraryLocations" ("LocationId", "TravelItineraryId")
+      VALUES (@p0, @p1);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "TravelItineraryLocations" ("LocationId", "TravelItineraryId")
+      VALUES (@p0, @p1);
+info: TravelerGuideApp.API.Middleware.TgaMiddleware[0]
+      Middleware Singleton GUID: 233d2ea6-06a3-408b-ad67-5c1d9c6e86f8
+info: TravelerGuideApp.API.Middleware.TgaMiddleware[0]
+      Middleware Transient GUID: eb2eb5aa-bf0d-4196-8cdf-d86a38ba39ef
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 6.0.4 initialized 'TravelerGuideAppDBContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.4' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "u"."Id", "u"."Email", "u"."FirstName", "u"."LastName", "u"."Password", "u"."UserType"
+      FROM "Users" AS "u"
+      WHERE "u"."Id" = @__p_0
+      LIMIT 1

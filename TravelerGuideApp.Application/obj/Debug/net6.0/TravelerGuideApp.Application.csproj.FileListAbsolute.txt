@@ -43,3 +43,18 @@ C:\Users\ilupa\Desktop\Proiect Amdaris\Traveler-Guide-App Backend\Traveler-Guide
 C:\Users\ilupa\Desktop\Proiect Amdaris\Traveler-Guide-App Backend\Traveler-Guide-App-Backend\TravelerGuideApp.Application\obj\Debug\net6.0\refint\TravelerGuideApp.Application.dll
 C:\Users\ilupa\Desktop\Proiect Amdaris\Traveler-Guide-App Backend\Traveler-Guide-App-Backend\TravelerGuideApp.Application\obj\Debug\net6.0\TravelerGuideApp.Application.pdb
 C:\Users\ilupa\Desktop\Proiect Amdaris\Traveler-Guide-App Backend\Traveler-Guide-App-Backend\TravelerGuideApp.Application\obj\Debug\net6.0\ref\TravelerGuideApp.Application.dll
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\bin\Debug\net6.0\TravelerGuideApp.Application.deps.json
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\bin\Debug\net6.0\TravelerGuideApp.Application.dll
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\bin\Debug\net6.0\TravelerGuideApp.Application.pdb
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\bin\Debug\net6.0\TravelerGuideApp.Domain.dll
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\bin\Debug\net6.0\TravelerGuideApp.Domain.pdb
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\TravelerGuideApp.Application.csproj.AssemblyReference.cache
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\TravelerGuideApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\TravelerGuideApp.Application.AssemblyInfoInputs.cache
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\TravelerGuideApp.Application.AssemblyInfo.cs
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\TravelerGuideApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\TravelerGuideApp.Application.csproj.CopyComplete
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\TravelerGuideApp.Application.dll
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\refint\TravelerGuideApp.Application.dll
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\TravelerGuideApp.Application.pdb
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravelerGuideApp.Application\obj\Debug\net6.0\ref\TravelerGuideApp.Application.dll

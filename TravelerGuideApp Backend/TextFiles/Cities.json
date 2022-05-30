@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Madrid",
+    "country": "Spain"
+  },
+  {
+    "name": "Paris",
+    "country": "France"
+  },
+  {
+    "name": "London",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "Bucuresti",
+    "country": "Romania"
+  },
+  {
+    "name": "New York",
+    "country": "USA"
+  },
+  {
+    "name": "Berlin",
+    "country": "Germany"
+  },
+  {
+    "name": "Los Angeles",
+    "country": "USA"
+  },
+  {
+    "name": "Prague",
+    "country": "Czech Republic"
+  }
+]

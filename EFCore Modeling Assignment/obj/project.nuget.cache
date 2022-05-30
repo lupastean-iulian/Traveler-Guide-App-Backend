@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ioMVk1mR4YWFxUseRnkmIzaLeueLR/ENYXqHK6SRSGj4V+qYqB8qxP8c43gCjgRqzqAHSkBxpU7L4qs1rCF4Og==",
+  "dgSpecHash": "PhpMmp5hbt4cHl7wConO02Wyl30+sIyhmVmkMy/7QUPC3I6TL7byCttQcTifC4NxSdvU7+cy14yUhQR/QrXFYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\Traveler-Guide-App Backend\\Traveler-Guide-App-Backend\\EFCore Modeling Assignment\\EFCore Modeling Assignment.csproj",
+  "projectFilePath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\back\\Backend\\EFCore Modeling Assignment\\EFCore Modeling Assignment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ilupa\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\ilupa\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

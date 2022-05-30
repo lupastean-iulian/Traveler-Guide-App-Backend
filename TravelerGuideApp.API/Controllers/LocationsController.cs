@@ -60,6 +60,18 @@ namespace TravelerGuideApp.API.Controllers
         }
 
         [HttpGet]
+        [Route("{latitude}/{longitude}")]
+        public async Task<IActionResult> GetLocationByLatLng(string latitude, string longitude)
+        {
+            var result = await _mediator.Send(new GetLocationByLatLng { lat = latitude, lng = longitude });
+            var mappedResult = _mapper.Map<LocationGetDto>(result);
+            if (mappedResult == null)
+                return NotFound();
+            return Ok(mappedResult);
+        }
+
+
+        [HttpGet]
         [Route("{locationId}")]
         public async Task<IActionResult> GetById(int locationId)
         {

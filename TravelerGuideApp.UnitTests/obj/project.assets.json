@@ -8885,11 +8885,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\Traveler-Guide-App Backend\\Traveler-Guide-App-Backend\\TravelerGuideApp.UnitTests\\TravelerGuideApp.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\back\\Backend\\TravelerGuideApp.UnitTests\\TravelerGuideApp.UnitTests.csproj",
       "projectName": "TravelerGuideApp.UnitTests",
-      "projectPath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\Traveler-Guide-App Backend\\Traveler-Guide-App-Backend\\TravelerGuideApp.UnitTests\\TravelerGuideApp.UnitTests.csproj",
+      "projectPath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\back\\Backend\\TravelerGuideApp.UnitTests\\TravelerGuideApp.UnitTests.csproj",
       "packagesPath": "C:\\Users\\ilupa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\Traveler-Guide-App Backend\\Traveler-Guide-App-Backend\\TravelerGuideApp.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\back\\Backend\\TravelerGuideApp.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ilupa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8906,11 +8906,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\Traveler-Guide-App Backend\\Traveler-Guide-App-Backend\\TravelerGuideApp.API\\TravelerGuideApp.API.csproj": {
-              "projectPath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\Traveler-Guide-App Backend\\Traveler-Guide-App-Backend\\TravelerGuideApp.API\\TravelerGuideApp.API.csproj"
+            "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\back\\Backend\\TravelerGuideApp.API\\TravelerGuideApp.API.csproj": {
+              "projectPath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\back\\Backend\\TravelerGuideApp.API\\TravelerGuideApp.API.csproj"
             },
-            "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\Traveler-Guide-App Backend\\Traveler-Guide-App-Backend\\TravelerGuideApp.Application\\TravelerGuideApp.Application.csproj": {
-              "projectPath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\Traveler-Guide-App Backend\\Traveler-Guide-App-Backend\\TravelerGuideApp.Application\\TravelerGuideApp.Application.csproj"
+            "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\back\\Backend\\TravelerGuideApp.Application\\TravelerGuideApp.Application.csproj": {
+              "projectPath": "C:\\Users\\ilupa\\Desktop\\Proiect Amdaris\\back\\Backend\\TravelerGuideApp.Application\\TravelerGuideApp.Application.csproj"
             }
           }
         }

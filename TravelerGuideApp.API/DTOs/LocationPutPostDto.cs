@@ -5,11 +5,11 @@ namespace TravelerGuideApp.API.DTOs
     public class LocationPutPostDto
     {
         [Required]
-        [MaxLength(30)]
-        [MinLength(3)]
+        [MaxLength(150)]
+        [MinLength(2)]
         public string Name { get; set; }
         [Required]
-        [MaxLength(40)]
+        [MaxLength(150)]
         [MinLength(10)]
         public string Address { get; set; }
         [Required]

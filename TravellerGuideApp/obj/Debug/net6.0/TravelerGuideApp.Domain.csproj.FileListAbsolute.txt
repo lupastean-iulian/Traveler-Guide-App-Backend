@@ -34,3 +34,15 @@ C:\Users\ilupa\Desktop\Proiect Amdaris\Traveler-Guide-App Backend\Traveler-Guide
 C:\Users\ilupa\Desktop\Proiect Amdaris\Traveler-Guide-App Backend\Traveler-Guide-App-Backend\TravellerGuideApp\obj\Debug\net6.0\refint\TravelerGuideApp.Domain.dll
 C:\Users\ilupa\Desktop\Proiect Amdaris\Traveler-Guide-App Backend\Traveler-Guide-App-Backend\TravellerGuideApp\obj\Debug\net6.0\TravelerGuideApp.Domain.pdb
 C:\Users\ilupa\Desktop\Proiect Amdaris\Traveler-Guide-App Backend\Traveler-Guide-App-Backend\TravellerGuideApp\obj\Debug\net6.0\ref\TravelerGuideApp.Domain.dll
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\bin\Debug\net6.0\TravelerGuideApp.Domain.deps.json
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\bin\Debug\net6.0\TravelerGuideApp.Domain.dll
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\bin\Debug\net6.0\TravelerGuideApp.Domain.pdb
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\obj\Debug\net6.0\TravelerGuideApp.Domain.csproj.AssemblyReference.cache
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\obj\Debug\net6.0\TravelerGuideApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\obj\Debug\net6.0\TravelerGuideApp.Domain.AssemblyInfoInputs.cache
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\obj\Debug\net6.0\TravelerGuideApp.Domain.AssemblyInfo.cs
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\obj\Debug\net6.0\TravelerGuideApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\obj\Debug\net6.0\TravelerGuideApp.Domain.dll
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\obj\Debug\net6.0\refint\TravelerGuideApp.Domain.dll
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\obj\Debug\net6.0\TravelerGuideApp.Domain.pdb
+C:\Users\ilupa\Desktop\Proiect Amdaris\back\Backend\TravellerGuideApp\obj\Debug\net6.0\ref\TravelerGuideApp.Domain.dll

@@ -39,6 +39,11 @@ namespace TravelerGuideApp.Infrastructure.Repositories
             return location;
         }
 
+        public Location GetByLatLng(string lat, string lng)
+        {
+            return context.Locations.FirstOrDefault(x => x.Latitude.Equals(lat) && x.Longitude.Equals(lng));
+        }
+
         public IEnumerable<Location> GetLocations()
         {
             return context.Locations.ToList();

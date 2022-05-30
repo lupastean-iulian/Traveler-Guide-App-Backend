@@ -19,14 +19,12 @@ public class Location
     }
 
     public int Id { get; set; }
-    [MaxLength(50)]
+    [MaxLength(150)]
     [Required]
     public string? Name { get; set; }
-    [MaxLength(50)]
+    [MaxLength(150)]
     [Required]
     public string? Address { get; set; }
-    [MaxLength(50)]
-    [Required]
     public string? Latitude { get; set; }
     public string? Longitude { get; set; }
     public int? CityId { get; set; }

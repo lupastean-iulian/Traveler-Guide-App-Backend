@@ -8,6 +8,8 @@ namespace TravelerGuideApp.Application.Interfaces
         void Update(Location location);
         void Delete(int locationId);
         Location GetById(int locationId);
+
+        Location GetByLatLng(string lat, string lng);
         IEnumerable<Location> GetLocations();
         IEnumerable<Location> GetLocationsForCity(int cityId);
         public void Save();

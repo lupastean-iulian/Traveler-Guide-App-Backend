@@ -47,6 +47,18 @@ namespace TravelerGuideApp.API.Controllers
             return Ok(mappedResult);
 
         }
+
+        [HttpGet]
+        [Route("{country}/{cityName}")]
+        public async Task<IActionResult> GetCityByNameAndCountry(string cityName, string country)
+        {
+            var result = await _mediator.Send(new GetCityByNameAndCountry { Name = cityName, Country = country });
+            var mappedResult = _mapper.Map<CityGetDto>(result);
+            if (mappedResult == null)
+                return NotFound();
+            return Ok(mappedResult);
+
+        }
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

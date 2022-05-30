@@ -9,7 +9,7 @@ namespace TravelerGuideApp.Application.Interfaces
         void Delete(int cityId);
         City? GetById(int cityId);
         IEnumerable<City?> GetAll();
-        City GetByName(string cityName);
+        City GetByName(string cityName, string country);
         public void Save();
     }
 }

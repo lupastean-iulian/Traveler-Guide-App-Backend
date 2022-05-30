@@ -50,9 +50,9 @@ namespace TravelerGuideApp.Infrastructure.Repositories
             return _context.Cities.ToList();
         }
 
-        public City GetByName(string cityName)
+        public City GetByName(string cityName, string country)
         {
-            return _context.Cities.FirstOrDefault(x => x.Name.Equals(cityName));
+            return _context.Cities.FirstOrDefault(x => x.Name.Equals(cityName) && x.Country.Equals(country));
         }
 
         public void Save()
