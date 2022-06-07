@@ -22,7 +22,7 @@ namespace TravelerGuideApp.API.Controllers
         }
 
         [HttpPost]
-        [Route("Admin/")]
+        [Route("Admin")]
         public async Task<IActionResult> CreateCity([FromBody] CityPutPostDto city)
         {
             var command = new CreateCityCommand

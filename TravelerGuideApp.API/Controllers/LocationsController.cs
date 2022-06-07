@@ -45,6 +45,15 @@ namespace TravelerGuideApp.API.Controllers
             return Ok(mappedResult);
         }
 
+        //[HttpGet]
+        //[Route("Address")]
+        //public async Task<IActionResult> GetLocationByAddress([FromBody] string address)
+        //{
+        //    var result = await _mediator.Send(new GetLocationByAddress { Address = address });
+
+        //    return Ok(result);
+        //}
+
         [HttpGet]
         [Route("{cityId}/Locations")]
         public async Task<IActionResult> GetLocationsForCity(int cityId)

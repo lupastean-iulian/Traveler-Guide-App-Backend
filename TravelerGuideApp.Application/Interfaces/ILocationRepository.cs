@@ -12,6 +12,7 @@ namespace TravelerGuideApp.Application.Interfaces
         Location GetByLatLng(string lat, string lng);
         IEnumerable<Location> GetLocations();
         IEnumerable<Location> GetLocationsForCity(int cityId);
+        Location GetByAddress(string address);
         public void Save();
     }
 }

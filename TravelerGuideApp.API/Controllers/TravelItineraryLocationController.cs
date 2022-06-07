@@ -22,13 +22,12 @@ namespace TravelerGuideApp.API.Controllers
         }
 
         [HttpPost]
-        [Route("{travelItineraryId}/locations/{locationId}")]
-        public async Task<IActionResult> AddLocationToTravelItinerary(int travelItineraryId, int locationId)
+        public async Task<IActionResult> AddLocationToTravelItinerary([FromBody] TravelItineraryLocationPutPostDto travelLocation)
         {
             var command = new AddLocationsToTravelItinerary
             {
-                TravelItineraryId = travelItineraryId,
-                LocationId = locationId
+                TravelItineraryId = travelLocation.TravelItineraryId,
+                LocationId = travelLocation.LocationId
             };
             var result = await _mediator.Send(command);
             return Ok(result);

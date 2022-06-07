@@ -54,6 +54,10 @@ namespace TravelerGuideApp.Infrastructure.Repositories
             return context.Locations.Where(x => x.CityId == cityId).Select(x => x).ToList();
         }
 
+        public Location GetByAddress(string address)
+        {
+            return context.Locations.FirstOrDefault(x => x.Address.Equals(address));
+        }
 
 
         public void Save()
