@@ -63,6 +63,12 @@ namespace TravelerGuideApp.Infrastructure.Repositories
             return context.UserExperiences.FirstOrDefault(x => x.LocationId == locationId && x.TravelItineraryId == travelItineraryId && x.UserId == userId);
         }
 
+        public double GetFullBudget(int userId, int travelId)
+        {
+            return context.UserExperiences.Where(x => x.UserId == userId && x.TravelItineraryId == travelId)
+                .Sum(x => x.Budget);
+        }
+
         public void Save()
         {
             context.SaveChanges();

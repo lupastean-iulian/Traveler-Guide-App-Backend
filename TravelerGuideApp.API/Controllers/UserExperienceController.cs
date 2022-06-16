@@ -7,7 +7,7 @@ using TravelerGuideApp.Application.Commands;
 using TravelerGuideApp.Application.Queries;
 namespace TravelerGuideApp.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class UserExperienceController : ControllerBase
     {
@@ -73,6 +73,18 @@ namespace TravelerGuideApp.API.Controllers
             }
 
             return Ok(mappedResult);
+        }
+
+        [HttpGet]
+        [Route("{userId}/{travelId}")]
+        public async Task<IActionResult> GetBudget(int userId, int travelId)
+        {
+            var result = await _mediator.Send(new TotalBudget
+            {
+                userId = userId,
+                travelId = travelId
+            });
+            return Ok(result);
         }
     }
 }

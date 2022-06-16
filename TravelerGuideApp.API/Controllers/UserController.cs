@@ -11,7 +11,7 @@ using TravelerGuideApp.Domain.Entities;
 
 namespace TravelerGuideApp.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -49,6 +49,7 @@ namespace TravelerGuideApp.API.Controllers
             return new UserAuthDto
             {
                 Email = user.Email,
+                Id = user.Id,
                 Token = _tokenService.CreateToken(user)
             };
         }

@@ -7,7 +7,7 @@ using TravelerGuideApp.Application.Queries;
 
 namespace TravelerGuideApp.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class LocationsController : ControllerBase
     {

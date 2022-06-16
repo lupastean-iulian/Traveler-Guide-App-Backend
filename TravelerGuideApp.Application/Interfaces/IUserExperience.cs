@@ -12,6 +12,8 @@ namespace TravelerGuideApp.Application.Interfaces
         void UpdateUserExperience(UserExperience userExperience);
         UserExperience GetByIds(int userId, int travelItineraryId, int locationId);
         UserExperience GetSpecificUserExperience(int userId, int travelItineraryId, int locationId);
+
+        double GetFullBudget(int userId, int travelId);
         public void Save();
     }
 }
